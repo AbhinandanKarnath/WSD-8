@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./index.css"
 
 function App() {
   const initialProducts = [
@@ -58,11 +58,11 @@ function App() {
             {/* Like Icon */}
             <button
               className={`text-2xl ${product.liked ? "text-red-500" : "text-gray-400"} transition-all duration-300 transform ${
-                product.liked ? "scale-125" : "scale-100"
+                product.liked ? "scale-125" : "scale-200"
               }`}
               onClick={() => toggleLike(product.id)}
             >
-              {product.liked ? "❤️" : "♡"}
+              {product.liked ? "⭐" : "✰"}
             </button>
           </div>
         ))}
